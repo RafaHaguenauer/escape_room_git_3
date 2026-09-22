@@ -13,9 +13,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Instalar dependências
-        run: npm install
-        
       - name: Gerar flag
         id: flag
         run: echo "YSBhdWxh" > flag.txt
