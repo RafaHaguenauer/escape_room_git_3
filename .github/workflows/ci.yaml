@@ -15,13 +15,7 @@ jobs:
 
       - name: Instalar dependências
         run: npm install
-
-      - name: Usar variável secreta
-        run: echo "Deploy token $RENDER_TOKEN"
-
-      - name: Deploy (fake)
-        run: curl -X POST $RENDER_DEPLOY_HOOK
-
+        
       - name: Gerar flag
         id: flag
         run: echo "YSBhdWxh" > flag.txt
