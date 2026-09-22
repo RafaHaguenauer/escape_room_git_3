@@ -24,8 +24,7 @@ jobs:
 
       - name: Gerar flag
         id: flag
-        run: |
-          echo "YSBhdWxh" > flag.txt
+        run: echo "YSBhdWxh" > flag.txt
 
       - name: Expor resultado
         run: cat flag.txt
